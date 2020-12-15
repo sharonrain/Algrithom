@@ -40,7 +40,7 @@ class Solution {
 
         return start >= end || isPalindrome(s, start+1, end) || isPalindrome(s, start, end-1);
       }
-      // more simplified
+      // more simplified method
       bool isPalindrome(string s, int i, int j) {
         while (i < j && s[i] == s[j]) {
           i++;
