@@ -14,7 +14,7 @@ public:
       return circleNum;
     }
 
-    void dfs(vector<vector<int>>& isConnected, int i, vector<bool> hasVisited) {
+    void dfs(vector<vector<int>>& isConnected, int i, vector<bool>& hasVisited) {
         for (int k=0;k<n;k++) {
             if(isConnected[i][k] == 1 && !hasVisited[k]) {
                 hasVisited[i] = true;
