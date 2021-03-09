@@ -24,7 +24,7 @@ public:
         visited[i] = true;
         backtraking(i+1, subsetList, subsets, visited, size, nums);
         visited[i] = false;
-        subsetList.pop_back();
+        subsetList.pop_back(); //
       }
     }
 };
