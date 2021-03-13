@@ -24,7 +24,7 @@ public:
     bool isPalindrome(string s, int begin, int end) {
       while(begin < end) {
         if (s[begin++] != s[end--]) {
-          return false; //
+          return false;
         }
       }
       return true;
