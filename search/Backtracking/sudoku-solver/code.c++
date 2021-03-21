@@ -43,6 +43,6 @@ public:
     int cubeNum(int i, int j) {
       int r = i/3;
       int c = j/3;
-      return r*3 + c; //////
+      return r*3 + c; ////////
     }
 };
