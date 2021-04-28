@@ -8,7 +8,7 @@ public:
           return results;
       } else {
           results[0] = first;
-          results[1] = nums[last + 1] == target ? last + 1 : max(first, last);
+          results[1] = nums[last + 1] == target ? last + 1 : last;
           return results;
       }
     }
