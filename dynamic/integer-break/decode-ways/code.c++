@@ -11,7 +11,7 @@ public:
             if (s[i] != '0') {
                 dp[i] += dp[i-1] ;
             }
-            if ((s[i-1] != '0' && atoi(s.substr(i-1,2).c_str()))) {
+            if (s[i-1] != '0' && atoi(s.substr(i-1,2).c_str()) <= 26) {
                 dp[i] += (i>=2 ? dp[i-2] : 1);
             }
         }
